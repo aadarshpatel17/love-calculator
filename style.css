@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-image: url("./img/element5-digital--WAiyQLGEEc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.card {
+    width: 70%;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-header {
+    font-size: 30px;
+    background-color: rgb(255, 0, 0);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.card-content {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.form-data {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    padding-top: 1rem;
+}
+.form-data > input,
+.form-data > div,
+.btn,
+.love-percentage {
+    padding: .5rem 1rem;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid rgb(218, 218, 218);
+    color: rgba(0, 0, 0, 0.76);
+    text-transform: uppercase;
+}
+.form-data > div,
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.form-data > div {
+    color: black;
+}
+.love-percentage {
+    color: rgb(104, 104, 104);
+    width: 40%;
+    margin: auto;
+}
+.btn {
+    font-size: 20px;
+    background-color: rgb(0, 221, 0);
+    min-width: 48%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.card-footer {
+    padding: 1rem .5rem;
+    text-align: center;
+    background-color: rgb(255, 44, 44);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .form-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2rem 1rem;
+        padding-top: 1rem;
+    }
+}
